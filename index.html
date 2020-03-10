@@ -1,186 +1,179 @@
-<!doctype html>
-<html class="no-js" lang="">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    html {
+      font-size: 10px;
+    }
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
+    ul {
+      list-style: none;
+      margin: 0px;
+      padding: 0px;
+      background-color: #EEEEEE;
+      height: 100%;
+      width: 15%;
+      position: fixed;
+    }
 
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/style.css">
+    li {
+      /*float: left*/
+    }
+
+    a {
+      font-size: 2rem;
+      display: block;
+      width: 100%;
+      color: black;
+      font-weight: bold;
+
+      /*设置超链接的内边距撑开到ul的高度*/
+
+      padding-bottom: 6px;
+      padding-top: 6px;
+      text-decoration: none;
+      text-transform: uppercase;
+      text-align: center;
+
+    }
+
+    a:hover, a:active {
+      background-color: darkslategray;
+      color: white;
+    }
+
+    /*添加一个激活状态*/
+    .active {
+
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    div {
+      margin-left: 15%;
+      width: 75%;
+      height: 100%;
+      /*设置溢出的部分*/
+      overflow: scroll;
+      /*border:1px solid black;*/
+      position: fixed;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+
+    textarea.ping {
+
+      width: 100%;
+
+      border: 1px solid black;
+      height: 100px;
+      overflow: scroll;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px;
+      box-sizing: border-box;
+      padding: 5px;
+
+    }
+
+    p {
+
+      text-indent: 2em;
+      font-size: 1.4rem;
+      /*字体颜色*/
+      /*color:red;*/
+      /*网络安全字体*/
+      font-family: Arial;
+      /*text-shadow: 4px 4px 20px red;*/
+      /*行高设置为当前字体的1.5倍*/
+      line-height: 1.5;
+    }
+
+    h1 {
+      /*文本对齐*/
+      text-align: center;
+    }
+    .p2
+    {
+      /*padding:20px;*/
+    }
+    /*段落的第一行设置布局间距*/
+    /*p::first-line{*/
+    /*letter-spacing: 2px;*/
+    /*word-spacing: 4px;*/
+    /*color:blue;*/
+    /*}*/
+  </style>
 </head>
-
-
-
-
-
 <body>
 
+<ul>
+  <li><a class="active" href="#home">主页</a></li>
+  <li><a href="#news">新闻</a></li>
+  <li><a href="#contact">contact</a></li>
+  <li><a href="#about">about</a></li>
+  <li><a href="#about">注册</a></li>
+</ul>
+<div>
+  <h1>《即将施行12年义务教育》</h1>
+  <span style="float:right">作者：占东红</span>
+  <br>
+  <p>HelloWorld!I am come from China,Nice to meet you!!!相对定位：元的位置来移动，原来的空间还保留着，别的元素不补齐，参照物是自己
+    绝对定位：元素根据父框的位置来移动，原来的空间不保留，别的元素会补齐（所以我觉得绝对定位比较危险）它的偏移量是相对于它的父框来说的，参照物是别人
+    固定定位：相当于根据固定的窗体定位
+    浮动：浮动的框可以向左或向右移动，直到它的外边缘碰到包含框或另一个浮动框的边框为止。由于浮动框不在文档的普通流中，所以文档的普通流中的块框表现得就像浮动框不存在一样。
+    注意：百分比必须使用绝对定位才可以使用
+    相对定位：元的位置来移动，原来的空间还保留着，别的元素不补齐，参照物是自己
+    绝对定位：元素根据父框的位置来移动，原来的空间不保留，别的元素会补齐（所以我觉得绝对定位比较危险）它的偏移量是相对于它的父框来说的，参照物是别人
+    固定定位：相当于根据固定的窗体定位</p>
+
+  <img style="float:left" src="img/3.jpg" height="262" width="350"/>
+  <!--<img  src="pictures/1.jpg" height="262" width="350"/>-->
+  <p class="p2" style="margin-left: 30px;">
+    浮动：浮动的框可以向左或向右移动，直到它的外边缘碰到包含框或另一个浮动框的边框为止。由于浮动框不在文档的普通流中，所以文档的普通流中的块框表现得就像浮动框不存在一样。
+    注意：百分比必须使用绝对定位才可以使用
+    相对定位：元的位置来移动，原来的空间还保留着，别的元素不补齐，参照物是自己
+    绝对定位：元素根据父框的位置来移动，原来的空间不保留，别的元素会补齐（所以我觉得绝对定位比较危险）它的偏移量是相对于它的父框来说的，参照物是别人
+    固定定位：相当于根据固定的窗体定位
+    浮动：浮动的框可以向左或向右移动，直到它的外边缘碰到包含框或另一个浮动框的边框为止。由于浮动框不在文档的普通流中，所以文档的普通流中的块框表现得就像浮动框不存在一样。
+    注意：百分比必须使用绝对定位才可以使用
+    相对定位：元的位置来移动，原来的空间还保留着，别的元素不补齐，参照物是自己
+    绝对定位：元素根据父框的位置来移动，原来的空间不保留，别的元素会补齐（所以我觉得绝对定位比较危险）它的偏移量是相对于它的父框来说的，参照物是别人
+    固定定位：相当于根据固定的窗体定位
+    浮动：浮动的框可以向左或向右移动，直到它的外边缘碰到包含框或另一个浮动框的边框为止。由于浮动框不在文档的普通流中，所以文档的普通流中的块框表现得就像浮动框不存在一样。
+    注意：百分比必须使用绝对定位才可以使用
+
+    相对定位：元的位置来移动，原来的空间还保留着，别的元素不补齐，参照物是自己
+    绝对定位：元素根据父框的位置来移动，原来的空间不保留，别的元素会补齐（所以我觉得绝对定位比较危险）它的偏移量是相对于它的父框来说的，参照物是别人
+    固定定位：相当于根据固定的窗体定位
+    浮动：浮动的框可以向左或向右移动，直到它的外边缘碰到包含框或另一个浮动框的边框为止。由于浮动框不在文档的普通流中，所以文档的普通流中的块框表现得就像浮动框不存在一样。
+    注意：百分比必须使用绝对定位才可以使用
+
+    相对定位：元的位置来移动，原来的空间还保留着，别的元素不补齐，参照物是自己
+    绝对定位：元素根据父框的位置来移动，原来的空间不保留，别的元素会补齐（所以我觉得绝对定位比较危险）它的偏移量是相对于它的父框来说的，参照物是别人
+    固定定位：相当于根据固定的窗体定位
+    浮动：浮动的框可以向左或向右移动，直到它的外边缘碰到包含框或另一个浮动框的边框为止。由于浮动框不在文档的普通流中，所以文档的普通流中的块框表现得就像浮动框不存在一样。
+    注意：百分比必须使用绝对定位才可以使用
+
+    相对定位：元的位置来移动，原来的空间还保留着，别的元素不补齐，参照物是自己
+    绝对定位：元素根据父框的位置来移动，原来的空间不保留，别的元素会补齐（所以我觉得绝对定位比较危险）它的偏移量是相对于它的父框来说的，参照物是别人
+    固定定位：相当于根据固定的窗体定位
+    浮动：浮动的框可以向左或向右移动，直到它的外边缘碰到包含框或另一个浮动框的边框为止。由于浮动框不在文档的普通流中，所以文档的普通流中的块框表现得就像浮动框不存在一样。
+    注意：百分比必须使用绝对定位才可以使用
+    <img src="pictures/1.jpg" height="262" width="350"/><img src="pictures/1.jpg" height="262" width="350"/></p>
+
+  <label for="saySomething">占东红:</label>
+  <textarea class="ping" id="saySomething">
+
+</textarea>
+  <br>
+  <input type="submit" value="评论">
 
 
-  <!--[if lte IE 9]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
-
-  <!-- Add your site or application content here -->
-  <!--<p>Hello world! This is HTML5 Boilerplate.</p>-->
-
-  <header role="banner">
-    <nav role="navigation" class="navbar navbar-static-top navbar-default">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">占东红的个人主页</a>
-        </div>
-        <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-          <li class="active" ><a href="index.html">Home</a></li>
-          <li ><a link="#">link</a></li>
-          <li ><a link="#">link</a></li>
-        </ul>
-        </div>
-      </div>
-    </nav>
-
-    <div id="homepage-feature" class="carousel slide">
-      <ol class="carousel-indicators">
-        <li data-target="#home-feature" data-slide-to="0" class="active"></li>
-        <li data-target="#home-feature" data-slide-to="1" ></li>
-        <li data-target="#home-feature" data-slide-to="2" ></li>
-        <li data-target="#home-feature" data-slide-to="3" ></li>
-      </ol>
-
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="img/9.jpg" alt="OKWU.edu Homepage">
-        </div>
-
-        <div class="item">
-          <img src="img/10.jpg" alt="OKWU.edu Homepage">
-        </div>
-
-        <div class="item">
-          <img src="img/11.jpg" alt="OKWU.edu Homepage">
-        </div>
-
-        <div class="item active">
-          <img src="img/12.jpg" alt="OKWU.edu Homepage">
-        </div>
-      </div>
+</div>
 
 
-      <a class="left carousel-control" href="#homepage-feature" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" ></span>
-      </a>
-
-      <a class="right carousel-control" href="#homepage-feature" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" ></span>
-      </a>
-    </div>
-  </header>
-
-  <main>
-    <!--<h1>主要标题</h1>-->
-    <!--<p>Content specific to this page goes here.</p>-->
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-4">
-        <h2>Welcome!五月天</h2>
-        <p>1992年至1994年，阿信、怪兽、玛莎、石头先后结识于台湾师范大学附属中学，加入师大附中的吉他社，开启了音乐旅程。
-          1995年，还在读高中的吉他手怪兽、主唱阿信，以及第一任的鼓手钱佑达组成名为“So Band”的乐团，之后
-          贝斯手玛莎加入。四人自高中毕业后，分别进入不同的大学就读，但乐团
-          并未停止活动，持续在许多酒吧、餐厅驻唱表演。 .</p>
-        <p ><a class="btn btn-primary pull-right" href="#">See out protfolio</a></p>
-      </div>
-
-      <div class="col-sm-4">
-        <h2>Recent Updates!</h2>
-        <p>石锦航（石头），1975年12月11日生于中国台湾台北市，五月天吉他手，也是一名作曲人、演员，毕业于师大附中、淡江大学水环系肄业。主要作品有《如烟》、《仓颉》等。
-          石锦航在2014年获邀担任Fender品牌代言人。</p>
-        <p ><a href="#" class="btn btn-primary pull-right">See What's new!</a></p>
-      </div>
-
-      <div class="col-sm-4">
-        <h2>Our team!</h2>
-        <p>冠佑，1973年07月28日生于台湾苗栗，台湾艺人，五月天成员之一。于1999年
-          加入五月天乐团担任鼓手。现有两个女儿，小玫瑰和小蔷薇，一家人幸福甜蜜。</p>
-        <p ><a href="#" class="btn btn-primary pull-right">Meet the team!</a></p>
-      </div>
-    </div>
-  </div>
-  </main>
-
-
-  <div class="Header">
-    <!--<a href="/" class="LogoWrapper"><img src="" alt="Scone O'clock logo"></a>-->
-    <p class="Strap">Scones:the most resplendent of snacks</p>
-  </div>
-  <div class="IntroWrapper">
-    <p class="IntroText">Occasionally maligned and misunderstood;the scone is a quintessentially British classic.</p>
-    <div class="MoneyShot">
-      <img class="MoneyShotImg" src="img/11.jpg" alt="">
-      <p class="ImageCaption">Incredible scones,picture from Wikipedia</p>
-    </div>
-  </div>
-  <p>
-    Recipe and serving suggestions follow.
-  </p>
-  <div class="Ingredients">
-    <h3 class="SubHeader">Ingredients</h3>
-    <ul>
-      <li>wow ,come on .man,let's go to party!wow ,come on .man,let's go to party!</li>
-      <li>wow ,come on .man,let's go to party!wow ,come on .man,let's go to party</li>
-      <li>wow ,come on .man,let's go to party!wow ,come on .man,let's go to party</li>
-      <li>wow ,come on .man,let's go to party!wow ,come on .man,let's go to party</li>
-      <li>wow ,come on .man,let's go to party!wow ,come on .man,let's go to party</li>
-      <li>wow ,come on .man,let's go to party!wow ,come on .man,let's go to party</li>
-      <li>wow ,come on .man,let's go to party!wow ,come on .man,let's go to party</li>
-    </ul>
-  </div>
-  <div class="HowToMake">
-    <h3 class="SubHeader">Method</h3>
-    <ol class="MethodWrapper">
-      <li>Meeting in Zagreb, officials from the Chinese Football Association say they were impressed by the performance of the Croatian national team at the World Cup, deciding they wanted to
-        work with the Croatian side on the development of football in both countries.</li>
-      <li>Du Zhaocai, secretary of the CPC committee of the CFA, has told Xinhua that they are planning to set u
-        p 3 to 4 youth academies in Europe as part of the Belt and Road Initiative. </li>
-      <li>China's first youth academy in Europe was established at the SK Slavia Praha club in Prague last year.</li>
-      <li>The back sides of the gold, silver and bronze 2008 Beijing Olympic Games medals. On the occasion of the 500-day countdown to the opening of the Beijing Olympic Games on March 27, 2007,
-        the Organizing Committee for the Games of the XXIX Olympiad (BOCOG) unveiled the Games' victory medals. .</li>
-      <li>It is with a kind of fear that I begin to write the history of my life. I have, as it were, a superstitious hesitation in lifting the veil that clings about my childhood like a golden mist. The task of writing an autobiography is a difficult one. When I try to classify my
-        earliest impressions, I find that fact and fancy look alike across the years</li>
-      <li>that link the past with the present. The woman paints the child's experiences in her own fantasy. A few impressions stand out vividly from the first years of my life; but "the shadows of the prison-house are on the rest." Besides, many of the joys and sorrows of childhood have lost their poignancy; and many incidents of vital importance in my
-        early education have been forgotten in the excitement of great discoveries. In order,</li>
-    </ol>
-  </div>
-
-  <footer role="contentinfo">
-    <p><small>Copyright &copy; Company Name</small></p>
-  </footer>
-
-  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 </body>
-
 </html>
