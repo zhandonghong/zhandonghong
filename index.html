@@ -15,40 +15,38 @@
     }
 
     ul {
-      /*border-radius: 5px;*/
+
       list-style: none;
-      background-color: #EEEEEE;
-      /*height: 100%;*/
-      /*width: 100%;*/
-      /*因为ul是块级元素，所以它默认与父容器一样宽*/
-      height: 60px;
-
-
+      /*background-color:greenyellow;*/
+      /*height: 400px;*/
+      width: 100%;
+      margin: auto; /*水平居中*/
+      border-bottom: 2px solid black;
 
     }
 
     li {
       float: left;
-      margin-right:20px;
     }
-    li:first-child
-    {
-      margin-left:23% ;
+
+    li:first-child {
+      margin-left: 23%;
     }
 
     a {
       font-size: 1.5rem;
       display: block;
-font-family: "Adobe 宋体 Std L";
+      font-family: "Adobe 宋体 Std L";
       color: black;
       /*font-weight: bold;*/
 
-      line-height: 60px;
       /*设置超链接的内边距撑开到ul的高度*/
-    border-right:1px solid red;
+      border-right: 1px solid red;
       text-decoration: none;
       text-transform: uppercase;
       text-align: center;
+      padding: 20px 30px;
+      /*background-color: gray;*/
 
     }
 
@@ -58,25 +56,25 @@ font-family: "Adobe 宋体 Std L";
 
     a:hover, a:active {
       /*background-color: #4CAF50;*/
-      /*color: white;*/
+      /*font-weight: bold;*/
       /*添加下划线*/
-      text-decoration:underline ;
+      text-decoration: underline;
     }
 
-    .content{
+    .content {
       width: 55%;
       height: 100%;
       /*设置溢出的部分*/
       overflow: auto;
       clear: both;
-      margin:auto;
+      margin: auto;
     }
 
     p {
       text-indent: 2em;
       font-size: 1.4rem;
       line-height: 2em;
-      margin-top:20px;
+      margin-top: 20px;
     }
 
     .guanyu {
@@ -89,66 +87,94 @@ font-family: "Adobe 宋体 Std L";
       /*文本对齐*/
       text-align: center;
       /*line-height: 80px;*/
-      margin:30px 0;
+      margin: 30px 0;
       /*text-indent: 2em;*/
     }
 
-    .p2 {
-      /*padding:20px;*/
-    }
     /*图片自适应*/
-    img
-    {
+    img {
       width: auto;
       height: auto;
       max-width: 100%;
       max-height: 100%;
     }
+
     /*当视口宽度小于500的时候应用样式修改背景色*/
     @media screen and (max-width: 500px) {
       body {
         /*background-color: yellow;*/
 
       }
-      .content{
+
+      .content {
         /*当到了移动端的时候，主体文章的宽度设置为100%*/
-        width:100%;
-        padding:0 10px;
+        width: 100%;
+        padding: 0 10px;
         box-sizing: border-box;
       }
-      h1{
+
+      h1 {
         text-indent: 2em;
         text-align: left;
+      }
+
+      #daohang li {
+        /*全部清除浮动适配移动端*/
+        clear:both;
+        width:100%;
+      }
+
+      #daohang a {
+        /*border:1px solid black;*/
+        border-bottom: 1px solid black;
+        background-color: lightgray;
+        padding: 10px 0px;
+        padding-left: 20px;
+        text-decoration: none;
+        width:100%;
+      }
+      #daohang li:first-child{
+        margin-left: 0px;
+      }
+      #daohang{
+        border-bottom:none;
+      }
+
+      #daohang a:hover {
+        color: white;
       }
     }
   </style>
 </head>
 <body>
 
-<ul>
+<ul id="daohang">
   <li><a class="active" href="#home">主页</a></li>
   <li><a href="#news">新闻</a></li>
   <li><a href="#contact">联系方式</a></li>
   <li><a href="html/zhuce.html" target="_blank">注册</a></li>
-  <li><a href="html/denglu.html" target="_blank" >登陆</a></li>
+  <li><a href="html/denglu.html" target="_blank">登陆</a></li>
+  <div style="clear:both;"></div>
 </ul>
 <div class="content">
   <h1>《外交部:中国为国际对非合作发挥了重要引领作用》</h1>
 
 
-<!--新闻图片位置占位-->
-  <div style="text-align: center"> <img src="img/gengshuang.jpg"  /></div>
+  <!--新闻图片位置占位-->
+  <div style="text-align: center"><img src="img/gengshuang.jpg"/></div>
 
   <p>人民网北京3月10日电 据外交部网站消息，外交部发言人耿爽主持例行记者会。记者会实录如下：</p>
-<p>一、我向大家通报一组数字：根据中国国家卫生健康委今天上午发布的统计数字，3月9日0-24时，中国境内新增治愈出院病例1297例，截至3月9日24时，中国境内累计治愈出院病例59897例。</p>
-<p>二、中国—太平洋岛国卫生专家视频会议于今日举行。</p>
-<p>此时此刻，中国外交部、国家卫生健康委员会的官员以及中方的卫生专家，正在与库克群岛、斐济、基里巴斯、密克罗尼西亚联邦、纽埃、巴布亚新几内亚、萨摩亚、所罗门群岛、汤加和瓦努阿图等10个太平洋岛国政府官员和卫生专家举行视频会议，分享抗疫信息，交流防控经验。</p>
-<p>新冠肺炎疫情发生后，中方本着公开、透明和高度负责的态度，及时向包括太平洋岛国在内的有关国家和地区通报信息，回应各方关切，加强同国际社会疫情防控合作，共同维护地区和全球的公共卫生安全。岛国政府和人民也对中国政府和人民的抗疫斗争给予了声援和支持，并提供了一定的帮助，我们对此表示感谢。</p>
-<p>当前，疫情在全球多点暴发并扩散蔓延，加强国际防控合作的重要性进一步凸显。中方高度重视太平洋岛国在疫情防控方面面临的挑战，愿继续根据岛国的需要提供力所能及的帮助，共同打赢这场疫情防控阻击战，推动构建人类命运共同体。</p>
-<p>关于这次视频会议的详细情况，我们会及时发布消息。</p>
-<p>问：据报道，9日，欧盟宣布启动处理对非洲关系的“全面战略”，该战略聚焦安全、经济增长、气候变化、数字转型、移民等议题。欧盟外交与安全政策高级代表博雷利表示，欧盟制定此项战略并非打算与中国竞争，而是加强自身同非洲大陆关系。中方对此有何评论？</p>
-<p>答：我们注意到有关报道，也注意到欧方表态。</p>
-
+  <p>一、我向大家通报一组数字：根据中国国家卫生健康委今天上午发布的统计数字，3月9日0-24时，中国境内新增治愈出院病例1297例，截至3月9日24时，中国境内累计治愈出院病例59897例。</p>
+  <p>二、中国—太平洋岛国卫生专家视频会议于今日举行。</p>
+  <p>
+    此时此刻，中国外交部、国家卫生健康委员会的官员以及中方的卫生专家，正在与库克群岛、斐济、基里巴斯、密克罗尼西亚联邦、纽埃、巴布亚新几内亚、萨摩亚、所罗门群岛、汤加和瓦努阿图等10个太平洋岛国政府官员和卫生专家举行视频会议，分享抗疫信息，交流防控经验。</p>
+  <p>
+    新冠肺炎疫情发生后，中方本着公开、透明和高度负责的态度，及时向包括太平洋岛国在内的有关国家和地区通报信息，回应各方关切，加强同国际社会疫情防控合作，共同维护地区和全球的公共卫生安全。岛国政府和人民也对中国政府和人民的抗疫斗争给予了声援和支持，并提供了一定的帮助，我们对此表示感谢。</p>
+  <p>当前，疫情在全球多点暴发并扩散蔓延，加强国际防控合作的重要性进一步凸显。中方高度重视太平洋岛国在疫情防控方面面临的挑战，愿继续根据岛国的需要提供力所能及的帮助，共同打赢这场疫情防控阻击战，推动构建人类命运共同体。</p>
+  <p>关于这次视频会议的详细情况，我们会及时发布消息。</p>
+  <p>
+    问：据报道，9日，欧盟宣布启动处理对非洲关系的“全面战略”，该战略聚焦安全、经济增长、气候变化、数字转型、移民等议题。欧盟外交与安全政策高级代表博雷利表示，欧盟制定此项战略并非打算与中国竞争，而是加强自身同非洲大陆关系。中方对此有何评论？</p>
+  <p>答：我们注意到有关报道，也注意到欧方表态。</p>
 
 
 </div>
