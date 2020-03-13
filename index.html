@@ -88,7 +88,9 @@ font-family: "Adobe 宋体 Std L";
     h1 {
       /*文本对齐*/
       text-align: center;
-      line-height: 80px;
+      /*line-height: 80px;*/
+      margin:30px 0;
+      text-indent: 2em;
     }
 
     .p2 {
@@ -102,6 +104,22 @@ font-family: "Adobe 宋体 Std L";
       max-width: 100%;
       max-height: 100%;
     }
+    /*当视口宽度小于500的时候应用样式修改背景色*/
+    @media screen and (max-width: 500px) {
+      body {
+        background-color: yellow;
+
+      }
+      .content{
+        /*当到了移动端的时候，主体文章的宽度设置为100%*/
+        width:100%;
+        padding:0 10px;
+        box-sizing: border-box;
+      }
+      h1{
+        text-align: left;
+      }
+    }
   </style>
 </head>
 <body>
@@ -114,7 +132,7 @@ font-family: "Adobe 宋体 Std L";
   <li><a href="html/denglu.html" target="_blank" >登陆</a></li>
 </ul>
 <div class="content">
-  <h1>外交部:中国为国际对非合作发挥了重要引领作用</h1>
+  <h1>《外交部:中国为国际对非合作发挥了重要引领作用》</h1>
 
 
 <!--新闻图片位置占位-->
