@@ -120,8 +120,8 @@
 
       #daohang li {
         /*全部清除浮动适配移动端*/
-        clear:both;
-        width:100%;
+        clear: both;
+        width: 100%;
       }
 
       #daohang a {
@@ -131,13 +131,18 @@
         padding: 10px 0px;
         padding-left: 20px;
         text-decoration: none;
-        width:100%;
+        width: 100%;
       }
-      #daohang li:first-child{
+#daohang li+li{
+  display: none;
+}
+
+      #daohang li:first-child {
         margin-left: 0px;
       }
-      #daohang{
-        border-bottom:none;
+
+      #daohang {
+        border-bottom: none;
       }
 
       #daohang a:hover {
@@ -145,15 +150,16 @@
       }
     }
   </style>
+
 </head>
 <body>
 
 <ul id="daohang">
-  <li><a class="active" href="#home">主页</a></li>
-  <li><a href="#news">新闻</a></li>
-  <li><a href="#contact">联系方式</a></li>
-  <li><a href="html/zhuce.html" target="_blank">注册</a></li>
-  <li><a href="html/denglu.html" target="_blank">登陆</a></li>
+  <li><a id="zhuyeid" class="active" href="#home">主页</a></li>
+  <li><a href="#news" class="hello">新闻</a></li>
+  <li><a href="#contact" class="hello">联系方式</a></li>
+  <li><a href="html/zhuce.html" target="_blank" class="hello">注册</a></li>
+  <li><a href="html/denglu.html" target="_blank" class="hello">登陆</a></li>
   <div style="clear:both;"></div>
 </ul>
 <div class="content">
