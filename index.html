@@ -20,6 +20,7 @@
       /*background-color:greenyellow;*/
       /*height: 400px;*/
       width: 100%;
+
       margin: auto; /*水平居中*/
       border-bottom: 2px solid black;
 
@@ -102,53 +103,48 @@
     /*当视口宽度小于500的时候应用样式修改背景色*/
     @media screen and (max-width: 500px) {
       body {
-        /*background-color: yellow;*/
+        width:100%;
 
       }
-
-      .content {
-        /*当到了移动端的时候，主体文章的宽度设置为100%*/
-        width: 100%;
-        padding: 0 10px;
+      .content{
+        width:100%;
+        padding:0 10px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
         box-sizing: border-box;
       }
-
-      h1 {
-        text-indent: 2em;
-        text-align: left;
-      }
-
-      #daohang li {
-        /*全部清除浮动适配移动端*/
-        clear: both;
+      li,a{
         width: 100%;
+        margin:0px;
+        padding:0px;
+        clear:both;
+        display: block;
+        color:black;
       }
-
-      #daohang a {
-        /*border:1px solid black;*/
-        border-bottom: 1px solid black;
+      li{
+        border-bottom: 1px solid darkred;
         background-color: lightgray;
-        padding: 10px 0px;
-        padding-left: 20px;
-        text-decoration: none;
-        width: 100%;
       }
-#daohang li+li{
-  display: none;
-}
 
-      #daohang li:first-child {
+      li:first-child{
         margin-left: 0px;
       }
 
-      #daohang {
-        border-bottom: none;
-      }
+ul{
+  border-bottom: none;
+}
 
-      #daohang a:hover {
-        color: white;
-      }
+
+
+
     }
+
+
+
+
+
+
+
   </style>
 
 </head>
