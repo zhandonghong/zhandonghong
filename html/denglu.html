@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="device-width,initial-scale=1.0">
   <title>Title</title>
   <style>
     html {
@@ -10,14 +11,18 @@
     }
 
     body {
-      /*background-image: url("pictures/fordenglu.jpg");*/
-      /*padding:20px;*/
-      /*margin:20px;*/
-      /*display:flex;*/
-      /*align-items: center;*/
-      /*justify-content: center;*/
+background-color: pink;
     }
 
+    .container {
+
+    }
+
+    .juti {
+      margin:0 auto;
+      width: 50%;
+
+    }
 
     input {
       width: 100%;
@@ -29,13 +34,13 @@
       padding: 10px;
       /*把输入框的边框设置为实线 一个像素比较好看*/
       border: 1px solid #ccc;
-      margin:4px;
-      outline-color:red;
+      margin: 4px;
+      outline-color: red;
       /*-moz-outline-radius-bottomright: 5px;*/
     }
+
     /*去掉文本框点击获得焦点后的边框*/
-    input:focus
-    {
+    input:focus {
       outline: none;
     }
 
@@ -54,29 +59,27 @@
 
     }
 
-
-    .juti {
-      /*先设计这个盒子的大小为百分之25的视窗大小*/
-      width: 25vw;
-      height: 25vh;
-      position: absolute;
-      top: 37.5%;
-      left:37.5%;
+    @media screen and (max-width: 600px) {
+      .juti {
+        width: 100%;
+        box-sizing: border-box;
+      }
     }
   </style>
 </head>
 <body>
 
 
+<div class="container">
 
-<div class="juti">
-  <div><label for="name">姓名：</label><input type="text"></div>
-  <div><label for="password">密码：</label><input type="password"></div>
-  <input type="submit" value="登陆">
+
+  <div class="juti">
+    <div><label for="name">姓名：</label><input type="text"></div>
+    <div><label for="password">密码：</label><input type="password"></div>
+    <input type="submit" value="登陆">
+  </div>
 </div>
 
-
-<div></div>
 </ul>
 </body>
 </html>
