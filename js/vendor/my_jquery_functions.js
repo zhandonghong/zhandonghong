@@ -1,33 +1,26 @@
+//加载窗体的时候判断如果时小于500的怎么显示
 $("document").ready(function () {
-    $("#showthing").click(function () {
-        $("#hello").show(1000, function () {
-            // alert("我出现了")
-        });
-    });
-    $("#hide").click(function () {
-        $("#hello").hide(1000, function () {
-            // alert("我躲起来了")
-        });
-    });
-    $("#qiehuan").click(function () {
-        $("#hello").toggle("slow", function () {
-            // alert("我变");
-        })
-    })
-$("#danru").click(function()
-{
-    $("div").fadeIn("slow");
-})
+  // alert("2323");
+//测试 alert("Hello,I am loaded"
+  if (document.body.clientWidth < 500) {
+// $("document").create()
+    $("ul li+li").hide();
+// $("ul").firstChild.show();
 
-    $("#danchu").click(function()
-    {
-        $("div").fadeOut("slow");
+
+    $("ul li:first-child").mouseenter(function(){
+
+      $("ul li+li").fadeIn();
     })
-    $("#togglefade").click(function()
-    {
-        $("div").fadeToggle("slow",function(){
-            // alert("坦尼的但")
-        });
+    $("ul li:first-child").mouseleave(function(){
+
+      $("ul li+li").fadeOut();
     })
+
+  }
 });
+
+
+
+
 
