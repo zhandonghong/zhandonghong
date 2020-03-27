@@ -1,85 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <!--<meta name="viewport" content="device-width,initial-scale=1.0">-->
-  <title>Title</title>
-  <style>
-    html {
-      margin: 0px;
-      padding: 0px;
-    }
-
-    body {
-background-color: pink;
-    }
-
-    .container {
-
-    }
-
-    .juti {
-      margin:0 auto;
-      width: 50%;
-
-    }
-
-    input {
-      width: 100%;
-
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box;
-      border-radius: 5px;
-      padding: 10px;
-      /*把输入框的边框设置为实线 一个像素比较好看*/
-      border: 1px solid #ccc;
-      margin: 4px;
-      outline-color: red;
-      /*-moz-outline-radius-bottomright: 5px;*/
-    }
-
-    /*去掉文本框点击获得焦点后的边框*/
-    input:focus {
-      outline: none;
-    }
-
-    input[type=submit] {
-      border: none;
-
-      background-color: #EEEEEE;
-      border-radius: 5px;
-      padding: 10px;
-    }
-
-    input[type=submit]:hover {
-
-      background-color: #EEEEEE;
-      opacity: 0.8;
-
-    }
-
-    @media screen and (max-width: 600px) {
-      .juti {
-        width: 100%;
-        box-sizing: border-box;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-
-
 <div class="container">
 
 
-  <div class="juti">
-    <div><label for="name">姓名：</label><input type="text"></div>
-    <div><label for="password">密码：</label><input type="password"></div>
-    <input type="submit" value="登陆">
-  </div>
+  <form action="/action_page.php">
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+    </div>
+    <div class="form-group form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" name="remember"> Remember me
+      </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
 </div>
 
-</ul>
+
 </body>
 </html>
