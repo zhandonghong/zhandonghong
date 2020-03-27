@@ -8,10 +8,47 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-</head>
-<body>
-<div class="container">
+  <script src="../js/jquery-3.4.1.js"></script>
+  <style>
+    #form{
+      position:relative;
+/*top:200px;*/
 
+    }
+
+  </style>
+</head>
+<script>
+
+
+
+  $(document).ready(function () {
+
+
+      // jQuery methods go here...
+      var divHeight = $("#form").innerHeight();
+      var clientHeight = $(document).height();
+      var top = (clientHeight - divHeight) / 2;
+
+      var divWidth = $("#form").innerWidth();
+      var clientWidth = $(document).width();
+      var right = (clientWidth - divWidth) / 2;
+
+      $("#form").css(
+        {
+          top: top + "px",
+          // left:left+"px"
+        }
+      )
+
+    // alert(top);
+  });
+
+</script>
+<body>
+<div class="container ">
+
+  <div class="" id="form">
 
   <form action="/action_page.php">
     <div class="form-group">
@@ -28,7 +65,9 @@
       </label>
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
+    <a class="btn btn-light" href="../index.html">Previous Page</a>
   </form>
+  </div>
 </div>
 
 
