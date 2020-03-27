@@ -48,7 +48,7 @@
 
 
             <li class="nav-item">
-              <a class="nav-link" href="html/denglu.html">登陆</a>
+              <a class="nav-link" href="#" data-toggle="modal" data-target="#myModal">登陆</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">注册</a>
@@ -58,6 +58,43 @@
       </nav>
       <br>
     </div>
+
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+      <div class="modal-dialog modal-sm ">
+        <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">登陆</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <!--登陆里面可以放一个验证表单-->
+            <form class="form-inline" action="/action_page.php">
+              <label for="email2" class="mb-2 mr-sm-2">Email:</label>
+              <input type="text" class="form-control mb-2 mr-sm-2" id="email2" placeholder="Enter email" name="email">
+              <label for="pwd2" class="mb-2 mr-sm-2">Password:</label>
+              <input type="text" class="form-control mb-2 mr-sm-2" id="pwd2" placeholder="Enter password" name="pswd">
+              <div class="form-check mb-2 mr-sm-2">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" name="remember"> Remember me
+                </label>
+              </div>
+              <button type="submit" class="btn btn-primary mb-2">Submit</button>
+            </form>
+
+
+          </div>
+          
+
+        </div>
+      </div>
+    </div>
+
 
   </div>
   <div class="col-sm-12">
@@ -107,19 +144,11 @@
       <!--文章的全部分类显示列表二级列表-->
       <h2>Java</h2>
       <div class="list-group">
-        <a href="#" class="list-group-item list-group-item-action list-group-item-info">Action item</a>
-        <a href="#" class="list-group-item list-group-item-action list-group-item-info ">Success item</a>
-        <a href="#" class="list-group-item list-group-item-action list-group-item-info ">Secondary item</a>
-        <a href="#" class="list-group-item list-group-item-action list-group-item-info">Info item</a>
-        <a href="#" class="list-group-item list-group-item-action list-group-item-info ">Warning item</a>
-        <a href="#" class="list-group-item list-group-item-action list-group-item-info ">Danger item</a>
-        <a href="#" class="list-group-item list-group-item-action list-group-item-info ">Primary item</a>
-        <a href="#" class="list-group-item list-group-item-action list-group-item-info ">Dark item</a>
-        <a href="#" class="list-group-item list-group-item-action list-group-item-info ">Light item</a>
+        <a href="#" class="list-group-item list-group-item-action list-group-item-info">Java OOP</a>
+        <a href="#" class="list-group-item list-group-item-action list-group-item-info ">JavaSE</a>
+        <a href="#" class="list-group-item list-group-item-action list-group-item-info ">Servlet</a>
+
       </div>
-
-
-
 
 
     </div>
@@ -129,15 +158,14 @@
 
       <h2>Web</h2>
       <div class="list-group">
-        <a href="#" class="list-group-item list-group-item-action list-group-item-info">Action item</a>
-        <a href="#" class="list-group-item list-group-item-action list-group-item-info ">Success item</a>
-        <a href="#" class="list-group-item list-group-item-action list-group-item-info ">Secondary item</a>
-        <a href="#" class="list-group-item list-group-item-action list-group-item-info">Info item</a>
-        <a href="#" class="list-group-item list-group-item-action list-group-item-info ">Warning item</a>
-        <a href="#" class="list-group-item list-group-item-action list-group-item-info ">Danger item</a>
-        <a href="#" class="list-group-item list-group-item-action list-group-item-info ">Primary item</a>
-        <a href="#" class="list-group-item list-group-item-action list-group-item-info ">Dark item</a>
-        <a href="#" class="list-group-item list-group-item-action list-group-item-info ">Light item</a>
+        <a href="#" class="list-group-item list-group-item-action list-group-item-info">html+css</a>
+        <a href="#" class="list-group-item list-group-item-action list-group-item-info ">http</a>
+        <a href="#" class="list-group-item list-group-item-action list-group-item-info ">jquery</a>
+        <a href="#" class="list-group-item list-group-item-action list-group-item-info">javascript</a>
+        <a href="#" class="list-group-item list-group-item-action list-group-item-info ">Ajax</a>
+        <a href="#" class="list-group-item list-group-item-action list-group-item-info ">XML</a>
+        <a href="#" class="list-group-item list-group-item-action list-group-item-info ">Json</a>
+
       </div>
 
     </div>
@@ -145,22 +173,17 @@
     <div class="col-sm-4 my-3 border">
       <h2>SQL</h2>
       <div class="list-group">
-        <a href="#" class="list-group-item list-group-item-action list-group-item-info">Action item</a>
-        <a href="#" class="list-group-item list-group-item-action list-group-item-info ">Success item</a>
-        <a href="#" class="list-group-item list-group-item-action list-group-item-info ">Secondary item</a>
-        <a href="#" class="list-group-item list-group-item-action list-group-item-info">Info item</a>
-        <a href="#" class="list-group-item list-group-item-action list-group-item-info ">Warning item</a>
-        <a href="#" class="list-group-item list-group-item-action list-group-item-info ">Danger item</a>
-        <a href="#" class="list-group-item list-group-item-action list-group-item-info ">Primary item</a>
-        <a href="#" class="list-group-item list-group-item-action list-group-item-info ">Dark item</a>
-        <a href="#" class="list-group-item list-group-item-action list-group-item-info ">Light item</a>
+        <a href="#" class="list-group-item list-group-item-action list-group-item-info">聚合查询</a>
+        <a href="#" class="list-group-item list-group-item-action list-group-item-info ">事务</a>
+        <a href="#" class="list-group-item list-group-item-action list-group-item-info ">存储过程</a>
+        <a href="#" class="list-group-item list-group-item-action list-group-item-info">数据库管理</a>
+
       </div>
 
     </div>
   </div>
   <div class="row">
-    <div class="col-sm-12 card-footer ">
-版权所有@占东红
+    <div class="col-sm-12 ">
       <!--尾部-->
     </div>
   </div>
