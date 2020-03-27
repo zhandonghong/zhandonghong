@@ -2,13 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54fd8812-2153-412b-b25f-28c8355890c6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/images/chicago.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/la.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/ny.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/jquery-3.4.1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/my_jquery_functions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/javaDetail.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/javaDetail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -51,13 +44,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="3785" />
+          <entry key="html" value="3844" />
           <entry key="js" value="1125" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="3785" />
+          <entry key="HTML" value="3844" />
           <entry key="JavaScript" value="1125" />
         </counts>
       </usages-collector>
@@ -68,8 +61,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+            <state relative-caret-position="270">
+              <caret line="13" selection-start-line="13" selection-end-line="15" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -185,6 +178,12 @@
             <path>
               <item name="zhandonghong.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="zhandonghong.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap.css" type="620a8d5e:NestingTreeNode" />
+            </path>
+            <path>
+              <item name="zhandonghong.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zhandonghong.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -249,12 +248,12 @@
       <workItem from="1585128820585" duration="7699000" />
       <workItem from="1585137585501" duration="863000" />
       <workItem from="1585153726771" duration="181000" />
-      <workItem from="1585285629017" duration="6006000" />
+      <workItem from="1585285629017" duration="6273000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46380000" />
+    <option name="totallyTimeSpent" value="46647000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -344,8 +343,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+        <state relative-caret-position="270">
+          <caret line="13" selection-start-line="13" selection-end-line="15" selection-end-column="56" />
         </state>
       </provider>
     </entry>
