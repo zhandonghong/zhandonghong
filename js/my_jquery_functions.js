@@ -6,7 +6,7 @@ window.onload = function () {
         document.getElementById("ketihuan").innerHTML = xhttp.response;
       }
     };
-    xhttp.open("GET", "html/javaOOP.html", true);
+    xhttp.open("GET", "html/javaSE.html", true);
     xhttp.send();
   }
   document.getElementById("ceshi").addEventListener("click", loadDoc);
@@ -19,7 +19,7 @@ window.onload = function () {
         document.getElementById("ketihuan").innerHTML = xhttp.response;
       }
     };
-    xhttp.open("GET", "html/javaOOP.html", true);
+    xhttp.open("GET", "html/htmlcss.html", true);
     xhttp.send();
   }
   document.getElementById("web").addEventListener("click", loadHtml);
