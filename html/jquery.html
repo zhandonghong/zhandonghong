@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+  <h1>Jquery总结</h1>
+  <h2>Jquery概述</h2>
+  <p>
+  JavaScript库
+  通常一个或多个JavaScript文件包含自定义功能，您可以将这些自定义功能附加到网页上以加快或启用编写通用功能的能力。示例包括jQuery，Mootools和React。
+  Jquery写的上瘾，也很无聊，太他妈简单了
+  Jquery介绍
+  Jquery是库，是对JavaScript的一层封装，让我们写代码更加方便，调用库
+
+  Query是一个JavaScript库。
+  jQuery大大简化了JavaScript编程。Jquery真的很简单，语法，选择器，事件是他的核心部分，使用这些后面就可以开始它的应用，一天就可以把它看完
+  jQuery很容易学习。
+  jQuery的目的是使在网站上使用JavaScript更加容易。
+  </p>
+
+  <h2>什么是jQuery？</h2>
+  <p>
+  jQuery是一个轻量级的“少写，多做”的JavaScript库。
+  jQuery的目的是使在网站上使用JavaScript更加容易。
+  jQuery执行许多需要许多JavaScript代码才能完成的常见任务，并将它们包装到可以用一行代码调用的方法中。
+  jQuery还简化了JavaScript中的许多复杂内容，例如AJAX调用和DOM操作。
+  jQuery库包含以下功能：
+  HTML / DOM操作
+  CSS操作
+  HTML事件方法
+  效果和动画
+  AJAX
+  实用工具
+  提示：此外，jQuery几乎可以完成所有任务的插件。
+
+  还有许多其他JavaScript库，但是jQuery可能是最受欢迎的，也是最可扩展的，并且跨浏览器
+
+  </p>
+
+  <p>访问另一个站点时，许多用户已经从Google或Microsoft下载了jQuery。 因此，当他们访问您的网站时，将从缓存中加载该文件，从而缩短了加载时间。 而且，大多数CDN都会确保用户一旦请求文件，就会从距离他们最近的服务器提供文件，这也将缩短加载时间。
+  </p>
+  <h2>
+    Jquery语法</h2>
+  <p>
+  使用jQuery，您可以选择（查询）HTML元素并对其执行“操作”。
+
+  Basic syntax is: $(selector).action()基础语法格式
+  A $ sign to define/access jQuery访问Jquery库
+  A (selector) to "query (or find)" HTML elements查询元素
+  A jQuery action() to be performed on the element(s)执行动作
+  Examples:
+  $(this).hide() - hides the current element.隐藏当前元素
+  $("p").hide() - hides all <p> elements.隐藏所有p元素
+  $(".test").hide() - hides all elements with class="test".隐藏类为test的所有元素
+  $("#test").hide() - hides the element with id="test".隐藏id为test的元素
+</p>
+  一个重要的事件
+  The Document Ready Event
+  You might have noticed that all jQuery methods in our examples, are inside a document ready event:所有jQuery方法都在文档就绪事件内
+  This is to prevent any jQuery code from running before the document is finished loading (is ready).防止文档再加载完成之前运行Jquery代码
+  It is good practice to wait for the document to be fully loaded and ready before working with it. This also allows you to have your JavaScript code before the body of your document, in the head section.这个事件可以保证JavaScript代码可以写在文档开始的前面
+  Jquery选择器
+  jQuery选择器是jQuery库中最重要的部分之一。
+
+  选择器这个东西不可能全部记得住，理解它的概念，用的时候查文档即可
+  jQuery选择器
+  jQuery选择器允许您选择和操作HTML元素。
+
+  jQuery选择器用于根据其名称，id，类，类型，属性，属性值等等来“查找”（或选择）HTML元素。 它基于现有的CSS选择器，此外，它还有一些自己的自定义选择器。
+  元素选择器”p”
+  id选择器”#text”
+  类选择器”.text”
+
+  如果您的网站包含了大量的页面，你想你的jQuery函数是易于维护，你可以把你的jQuery函数在一个单独的.js文件/自己调用jquery库写的方法功能模块可以放在一个单独的js文件中，供所有页面调用
+  Jquery事件
+  jQuery is tailor-made to respond to events in an HTML page.
+  Jquery是为了响应html中的事件而量身定制的
+
+  What are Events?
+  All the different visitors' actions that a web page can respond to are called events.
+  所有浏览器能够响应的关于访问者的动作都可以称作事件
+  The term "fires/fired" is often used with events. Example: "The keypress event is fired, the moment you press a key".
+
+  In jQuery, most DOM events have an equivalent jQuery method.在Jquery中拥有和DOM中一样效果的事件方法
+  常用事件：
+  文档加载完毕事件
+  单击事件
+  双击事件
+  鼠标进入mouseinter
+  鼠标离开mouseleave
+  鼠标悬浮
+  按下触发
+  弹起触发
+  获得焦点
+  失去焦点
+
+  事件监听
+  The on() method attaches one or more event handlers for the selected elements.
+  为元素添加一个或者多个事件，类似于DOM的事件监听
+
+
+  Jquery效果
+  隐藏，显示
+  切换
+  滑动，淡入淡出和动画。 哇！这个效果做一个移动端的导航菜单比较实用
+
+
+  显示隐藏
+  隐藏元素Hide
+  显示元素Show
+  The optional callback parameter is a function to be executed after the hide() or show() method completes (you will learn more about callback functions in a later chapter).显示隐藏中含有第二个参数是一个回调函数，当显示和隐藏执行完毕之后调用的
+  切换
+  您还可以使用toggle（）方法在隐藏和显示元素之间进行切换。
+  显示的元素被隐藏，隐藏的元素被显示：
+  语法：参数是一个速度和回调函数
+
+  For a complete overview of all jQuery effects, please go to our jQuery Effect Reference.
+
+  淡入淡出
+  使用jQuery，您可以淡入和淡出可见性。
+  jQuery fadeTo（）方法允许淡入给定的不透明度（值介于0和1之间）。
+  jQuery fadeIn（）方法用于淡入隐藏元素。和之前一样，两个参数，淡入的速度和回调函数
+
+  The jQuery fadeToggle() method toggles between the fadeIn() and fadeOut() methods.
+  If the elements are faded out, fadeToggle() will fade them in.
+  If the elements are faded in, fadeToggle() will fade them out.
+
+  上下滑动
+  With jQuery you can create a sliding effect on elements.
+  jQuery滑动方法可以上下滑动元素。
+  Slidedown下滑显示
+  SlideUp上滑收缩
+
+  Jquery动画
+  With jQuery, you can create custom animations.使用Jquery创建自定义动画
+
+
+
+  停止动画
+  Jquery链式编程
+  Jquery Html
+
+  这个部分内容：
+  内容内部的最前最后添加元素
+  内容外部的前一位和后一位添加元素
+  控制元素的属性和样式
+
+  jQuery包含用于更改和操纵HTML元素和属性的强大方法。
+
+  jQuery DOM操作
+  jQuery的一个非常重要的部分是操纵DOM的可能性。
+
+  jQuery附带了许多与DOM相关的方法，这些方法使访问和操作元素和属性变得容易。
+  内容和属性值
+  获取内容和属性值
+
+  获取元素文本text:innerText
+  alert($("div").text());//
+
+  获取元素innerHtml
+  alert($("div").html());
+
+  获取元素的value值
+  alert($("#ihavevalue").val());
+
+  获取元素某个属性的值attr()
+  alert($("a").attr("href"));
+
+
+  设置内容和属性值
+  Set Content - text(), html(), and val()
+  我们将使用与上一页相同的三种方法来设置内容：
+
+  text（）-设置或返回所选元素的文本内容
+  html（）-设置或返回所选元素的内容（包括HTML标记）
+  val（）-设置或返回表单字段的值
+  设置内容和属性值与获取内容和属性值是一样的方法
+
+  添加html元素
+  添加一个元素
+  在所选元素内部最后添加元素
+  在所选元素内部最开始的地方添加元素
+  The jQuery after() method inserts content AFTER the selected HTML elements.身后
+  The jQuery before() method inserts content BEFORE the selected HTML elements.身前
+
+  添加多个元素到文档对象
+
+
+
+
+
+
+
+
+
+
+
+  Jquery遍历
+  Jquery Ajax
+  In short; AJAX is about loading data in the background and display it on the webpage, without reloading the whole page.
+
+  With the jQuery AJAX methods, you can request text, HTML, XML, or JSON from a remote server using both HTTP Get and HTTP Post - And you can load the external data directly into the selected HTML elements of your web page!
+  使用Ajax可以从服务器请求文本，html,xml,json数据，并且可以将这些数据显示到相应的html元素中
+
+  Without jQuery, AJAX coding can be a bit tricky!
+
+  Writing regular AJAX code can be a bit tricky, because different browsers have different syntax for AJAX implementation. This means that you will have to write extra code to test for different browsers. However, the jQuery team has taken care of this for us, so that we can write AJAX functionality with only one single line of code.
+  Jquery封装好了Ajax访问的代码，兼顾了兼容性，很方便
+
+  Load method
+  The load() method loads data from a server and puts the returned data into the selected element.直接访问数据并放入到指定元素
+  Load方法的可选的data参数指定要与请求一起发送的一组查询字符串键/值对。
+
+  Jquery Ajax太简单了
+  $("document").ready(function () {
+  $("button").click(function () {
+  $("div").load("demo_test.txt #p1", function (responseTxt, statusTxt, xhr) {
+  if (statusTxt == "success") {
+  alert("异步请求成功！");
+  }
+  if (statusTxt == "error") {
+  alert(xhr.status + ":" + c.statusText);
+  }
+  });
+  })
+  });
+
+  Get
+  The jQuery get() and post() methods are used to request data from the server with an HTTP GET or POST request.
+  The first parameter of $.get() is the URL we wish to request ("demo_test.asp").
+  The second parameter is a callback function. The first callback parameter holds the content of the page requested, and the second callback parameter holds the status of the request.
+  Get方法的回调函数的第一个参数保存请求的内容数据
+  第二个参数保存请求的状态
+  试着写一些Ajax直接访问服务端页面，而不是直接访问文本文件之类的
+  post
+  The optional data parameter specifies some data to send along with the request.
+  可选的data参数指定一些数据与请求一起发送。
+
+</div>
+</body>
+</html>
