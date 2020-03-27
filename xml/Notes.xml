@@ -1,0 +1,401 @@
+<CATALOG>
+  <ESSAY>
+    <TITLE>Empire Burlesque</TITLE>
+    <ARTIST>Bob Dylan</ARTIST>
+    <ESSAYBODY>
+      Java面向对象
+      概念
+      Java是一种面向对象的编程语言。
+
+      Java中的所有内容都与类和对象以及其属性和方法相关联。 例如：在现实生活中，汽车就是物体。 汽车具有属性（例如重量和颜色）以及方法（例如驱动器和制动器）。
+
+      类就像对象的构造函数，或者是创建对象的“蓝图”。
+
+      注意：文件名与类名相同
+
+      创建对象
+      对象是从一个类创建的
+      创建一个对象
+      test1 myObj=new test1();
+
+      创建多个对象
+      test1 myObj=new test1();
+      test1 myObj2=new test1();
+
+      使用多个类
+      您还可以创建一个类的对象，然后在另一个类中访问它。 这通常用于更好地组织类（一个类具有所有属性和方法，而另一个类则具有main（）方法（要执行的代码））。
+
+      属性
+      访问属性
+      覆盖属性值
+      属性声明为Final，那么它的值就不可以覆盖
+      当您希望变量始终存储相同的值（例如PI（3.14159 ...））时，final关键字很有用。
+      创建的多个对象之间的值不会互相干扰
+      可以定义多个属性
+      方法
+      方法是在类中声明的，并且它们用于执行某些操作：
+
+      Main 方法
+      然后转到main（）方法，您现在知道该方法是运行程序的内置Java方法（执行main内部的任何代码）。
+
+      访问对象的方法
+
+
+      构造函数
+      Java中的构造函数是一个特殊的方法被用来初始化对象。创建一个类的对象时，构造函数被调用。它可用于设置对象属性的初始值：
+
+      请注意，构造函数名称必须与类名称匹配，并且不能具有返回类型（如void）。
+
+      还要注意，创建对象时会调用构造函数。
+
+      默认情况下，所有类都具有构造函数：如果您自己没有创建类构造函数，则Java会为您创建一个。 但是，您将无法设置对象属性的初始值。
+
+      传递参数的构造函数
+      可以传递一个参数也可以传递多个参数
+      修饰符
+      public关键字是访问修饰符，意味着它用于设置类，属性，方法和构造函数的访问级别。
+
+      我们将修饰符分为两组：
+
+      访问修饰符-控制访问级别
+      非访问修饰符-不控制访问级别，但提供其他功能
+
+      修饰符的概念很简单，修饰符用着用着就熟悉了
+
+      类的访问修饰符
+      Public 公开的
+      Default 默认的
+
+      类的非访问修饰符
+      Final 最终的类 该类不能被其他的类继承
+      Abstract 抽象的类 该类不能用于创建对象（要访问抽象类，它必须从另一个类继承）
+
+      属性方法和构造函数的访问修饰符
+      Public 公开的 所有类都可以访问的代码
+      Private 私有的 只有自己的类才可以访问
+      Default 该代码只能在同一程序包中访问。 当您不指定修饰符时使用。
+      Protected 该代码可在相同的包和子类中访问。
+
+
+      属性和方法的非访问修饰符
+      Final 属性和方法不能被覆盖/修改
+      Static 属性和方法属于类，而不是对象
+
+      你会经常看到Java程序，要么static或public 属性和方法。
+      在上面的例子中，我们创建了一个static 方法，这意味着它可以在不创建类的对象进行访问，不像public，这只能通过对象访问：
+
+      Static method can be called without creating objects
+      public method must be called by creating objects
+
+
+      Abstract 只能在抽象类中使用，并且只能在方法上使用。 该方法没有主体，例如abstract void run（）;。 主体由子类提供（从继承）
+
+      比较复杂的修饰符（后续跟进）
+      transient Attributes and methods are skipped when serializing the object containing them
+      synchronized Methods can only be accessed by one thread at a time
+      volatile The value of an attribute is not cached thread-locally, and is always read from the "main memory"
+      对象
+
+      封装
+
+      The meaning of Encapsulation, is to make sure that "sensitive" data is hidden from users. To achieve this, you
+      must:
+      declare class variables/attributes as private
+      provide public get and set methods to access and update the value of a private variable
+      封装的含义是确保对用户隐藏“敏感”数据。 为此，您必须：
+      将类变量/属性声明为私有
+      提供公共获取和设置方法以访问和更新私有变量的值
+      提供统一的接口也就是统一的方法去访问更新值。
+      私有的不可访问，但是 如果我们提供公共获取和设置方法，则可以访问它们。
+      由于name变量被声明为private，因此我们不能从此类外部访问它：只能通过类提供的方法访问修改，这就是封装，不能通过点号访问，只能通过类的方法
+      为什么使用封装？
+      数据的安全性提高
+
+
+      包
+      Java包和API
+      Java包用于对相关类进行分组。 可以将其视为文件目录中的文件夹。 我们使用软件包来避免名称冲突，并编写更好的可维护代码。 软件包分为两类：
+
+      内置软件包（来自Java API的软件包）
+      用户定义的程序包（创建自己的程序包）
+
+      Java API是Java开发环境中包含的，可免费使用的预编写类的库。
+
+      该库包含用于管理输入，数据库编程等的组件。 可以在Oracle网站上找到完整列表：https：//docs.oracle.com/javase/8/docs/api/。
+
+      该库分为包和类。 这意味着您既可以导入单个类（以及其方法和属性），也可以导入包含属于指定包的所有类的整个包。
+
+      要使用库中的类或包，您需要使用import关键字：
+
+      导入一个类
+      java.util是一个程序包，而Scanner是java.util程序包的类。
+
+      导入一个包中的所有的类
+      要导入整个程序包，请在句子后加上星号（*）。 以下示例将导入java.util包中的所有类：
+
+      用户定义的程序包
+      要创建自己的软件包，您需要了解Java使用文件系统目录来存储它们。 就像您计算机上的文件夹一样：
+
+      Pakeage关键字
+      继承
+      在Java中，可以将属性和方法从一个类继承到另一个类。继承是获得重用的属性和方法
+
+      为什么以及何时使用“继承”？
+      -这对于代码可重用性很有用：在创建新类时重用现有类的属性和方法。
+      - It is useful for code reusability: reuse attributes and methods of an existing class when you create a new
+      class.
+
+      继承的父类是普通的类，那么父类的方法，我们可以重写，也可以不重写，但是如果父类是抽象类，那么它的方法必须重写，如果它的父类是接口，那么也必须重写
+      多态
+      多态是使用重用的属性和方法
+      为什么以及何时使用“继承”和“多态”？
+      -这对于代码可重用性很有用：在创建新类时重用现有类的属性和方法。
+      - It is useful for code reusability: reuse attributes and methods of an existing class when you create a new
+      class.
+      调用同一个方法实现不同操作就是多态，大家用同一个方法实现不同的效果
+      内部类
+      嵌套类的目的是对属于在一起的类进行分组，这使您的代码更具可读性和可维护性。要访问内部类，请创建外部类的对象，然后创建内部类的对象：
+      内部类的优点之一是，它们可以访问外部类的属性和方法：
+
+      私有内部类
+      外部类不能方位私有内部类
+
+      静态内部类
+      内部类也可以是静态的，这意味着您无需创建外部类的对象就可以访问它
+      就像静态属性和方法一样，静态内部类无法访问外部类的成员。
+
+      内部类访问外部类
+
+      抽象
+      为什么使用抽象类？
+      为了实现安全-隐藏某些细节，仅显示对象的重要细节。
+      数据抽象是隐藏某些细节并仅向用户显示基本信息的过程。
+      可以使用抽象类或接口来实现抽象
+
+      abstract关键字是不可访问的修饰符，用于类和方法：
+
+      抽象类：是一个受限类，不能用于创建对象（要访问它，它必须从另一个类继承）。
+
+      抽象方法：只能在抽象类中使用，并且没有主体。 主体由子类提供（从继承）。
+      抽象类可以同时具有抽象方法和常规方法：
+      子类必须重写父类抽象类的抽象方法
+
+      接口
+      为什么以及何时使用接口？
+      简单纯粹
+      为了获得安全性-隐藏某些细节，仅显示对象（接口）的重要细节。
+      接口是完全的抽象类，用来在一个空的类里面组织相关的方法
+      接口方法的主体由实现类实现
+      接口不能包含构造函数，因为他不能创建对象
+      接口方法默认是public 和 abstract的
+      接口属性默认是public and static and final
+      继承多个接口
+
+
+    </ESSAYBODY>
+    <COUNTRY>USA</COUNTRY>
+    <COMPANY>Columbia</COMPANY>
+    <PRICE>10.90</PRICE>
+    <YEAR>1985</YEAR>
+  </ESSAY>
+  <ESSAY>
+    <TITLE>Hide your heart</TITLE>
+    <ARTIST>Bonnie Tyler</ARTIST>
+    <COUNTRY>UK</COUNTRY>
+    <COMPANY>CBS Records</COMPANY>
+    <PRICE>9.90</PRICE>
+    <YEAR>1988</YEAR>
+  </ESSAY>
+  <ESSAY>
+    <TITLE>Greatest Hits</TITLE>
+    <ARTIST>Dolly Parton</ARTIST>
+    <COUNTRY>USA</COUNTRY>
+    <COMPANY>RCA</COMPANY>
+    <PRICE>9.90</PRICE>
+    <YEAR>1982</YEAR>
+  </ESSAY>
+  <ESSAY>
+    <TITLE>Still got the blues</TITLE>
+    <ARTIST>Gary Moore</ARTIST>
+    <COUNTRY>UK</COUNTRY>
+    <COMPANY>Virgin records</COMPANY>
+    <PRICE>10.20</PRICE>
+    <YEAR>1990</YEAR>
+  </ESSAY>
+  <ESSAY>
+    <TITLE>Eros</TITLE>
+    <ARTIST>Eros Ramazzotti</ARTIST>
+    <COUNTRY>EU</COUNTRY>
+    <COMPANY>BMG</COMPANY>
+    <PRICE>9.90</PRICE>
+    <YEAR>1997</YEAR>
+  </ESSAY>
+  <ESSAY>
+    <TITLE>One night only</TITLE>
+    <ARTIST>Bee Gees</ARTIST>
+    <COUNTRY>UK</COUNTRY>
+    <COMPANY>Polydor</COMPANY>
+    <PRICE>10.90</PRICE>
+    <YEAR>1998</YEAR>
+  </ESSAY>
+  <ESSAY>
+    <TITLE>Sylvias Mother</TITLE>
+    <ARTIST>Dr.Hook</ARTIST>
+    <COUNTRY>UK</COUNTRY>
+    <COMPANY>CBS</COMPANY>
+    <PRICE>8.10</PRICE>
+    <YEAR>1973</YEAR>
+  </ESSAY>
+  <ESSAY>
+    <TITLE>Maggie May</TITLE>
+    <ARTIST>Rod Stewart</ARTIST>
+    <COUNTRY>UK</COUNTRY>
+    <COMPANY>Pickwick</COMPANY>
+    <PRICE>8.50</PRICE>
+    <YEAR>1990</YEAR>
+  </ESSAY>
+  <ESSAY>
+    <TITLE>Romanza</TITLE>
+    <ARTIST>Andrea Bocelli</ARTIST>
+    <COUNTRY>EU</COUNTRY>
+    <COMPANY>Polydor</COMPANY>
+    <PRICE>10.80</PRICE>
+    <YEAR>1996</YEAR>
+  </ESSAY>
+  <ESSAY>
+    <TITLE>When a man loves a woman</TITLE>
+    <ARTIST>Percy Sledge</ARTIST>
+    <COUNTRY>USA</COUNTRY>
+    <COMPANY>Atlantic</COMPANY>
+    <PRICE>8.70</PRICE>
+    <YEAR>1987</YEAR>
+  </ESSAY>
+  <ESSAY>
+    <TITLE>Black angel</TITLE>
+    <ARTIST>Savage Rose</ARTIST>
+    <COUNTRY>EU</COUNTRY>
+    <COMPANY>Mega</COMPANY>
+    <PRICE>10.90</PRICE>
+    <YEAR>1995</YEAR>
+  </ESSAY>
+  <ESSAY>
+    <TITLE>1999 Grammy Nominees</TITLE>
+    <ARTIST>Many</ARTIST>
+    <COUNTRY>USA</COUNTRY>
+    <COMPANY>Grammy</COMPANY>
+    <PRICE>10.20</PRICE>
+    <YEAR>1999</YEAR>
+  </ESSAY>
+  <ESSAY>
+    <TITLE>For the good times</TITLE>
+    <ARTIST>Kenny Rogers</ARTIST>
+    <COUNTRY>UK</COUNTRY>
+    <COMPANY>Mucik Master</COMPANY>
+    <PRICE>8.70</PRICE>
+    <YEAR>1995</YEAR>
+  </ESSAY>
+  <ESSAY>
+    <TITLE>Big Willie style</TITLE>
+    <ARTIST>Will Smith</ARTIST>
+    <COUNTRY>USA</COUNTRY>
+    <COMPANY>Columbia</COMPANY>
+    <PRICE>9.90</PRICE>
+    <YEAR>1997</YEAR>
+  </ESSAY>
+  <ESSAY>
+    <TITLE>Tupelo Honey</TITLE>
+    <ARTIST>Van Morrison</ARTIST>
+    <COUNTRY>UK</COUNTRY>
+    <COMPANY>Polydor</COMPANY>
+    <PRICE>8.20</PRICE>
+    <YEAR>1971</YEAR>
+  </ESSAY>
+  <ESSAY>
+    <TITLE>Soulsville</TITLE>
+    <ARTIST>Jorn Hoel</ARTIST>
+    <COUNTRY>Norway</COUNTRY>
+    <COMPANY>WEA</COMPANY>
+    <PRICE>7.90</PRICE>
+    <YEAR>1996</YEAR>
+  </ESSAY>
+  <ESSAY>
+    <TITLE>The very best of</TITLE>
+    <ARTIST>Cat Stevens</ARTIST>
+    <COUNTRY>UK</COUNTRY>
+    <COMPANY>Island</COMPANY>
+    <PRICE>8.90</PRICE>
+    <YEAR>1990</YEAR>
+  </ESSAY>
+  <ESSAY>
+    <TITLE>Stop</TITLE>
+    <ARTIST>Sam Brown</ARTIST>
+    <COUNTRY>UK</COUNTRY>
+    <COMPANY>A and M</COMPANY>
+    <PRICE>8.90</PRICE>
+    <YEAR>1988</YEAR>
+  </ESSAY>
+  <ESSAY>
+    <TITLE>Bridge of Spies</TITLE>
+    <ARTIST>T'Pau</ARTIST>
+    <COUNTRY>UK</COUNTRY>
+    <COMPANY>Siren</COMPANY>
+    <PRICE>7.90</PRICE>
+    <YEAR>1987</YEAR>
+  </ESSAY>
+  <ESSAY>
+    <TITLE>Private Dancer</TITLE>
+    <ARTIST>Tina Turner</ARTIST>
+    <COUNTRY>UK</COUNTRY>
+    <COMPANY>Capitol</COMPANY>
+    <PRICE>8.90</PRICE>
+    <YEAR>1983</YEAR>
+  </ESSAY>
+  <ESSAY>
+    <TITLE>Midt om natten</TITLE>
+    <ARTIST>Kim Larsen</ARTIST>
+    <COUNTRY>EU</COUNTRY>
+    <COMPANY>Medley</COMPANY>
+    <PRICE>7.80</PRICE>
+    <YEAR>1983</YEAR>
+  </ESSAY>
+  <ESSAY>
+    <TITLE>Pavarotti Gala Concert</TITLE>
+    <ARTIST>Luciano Pavarotti</ARTIST>
+    <COUNTRY>UK</COUNTRY>
+    <COMPANY>DECCA</COMPANY>
+    <PRICE>9.90</PRICE>
+    <YEAR>1991</YEAR>
+  </ESSAY>
+  <ESSAY>
+    <TITLE>The dock of the bay</TITLE>
+    <ARTIST>Otis Redding</ARTIST>
+    <COUNTRY>USA</COUNTRY>
+    <COMPANY>Stax Records</COMPANY>
+    <PRICE>7.90</PRICE>
+    <YEAR>1968</YEAR>
+  </ESSAY>
+  <ESSAY>
+    <TITLE>Picture book</TITLE>
+    <ARTIST>Simply Red</ARTIST>
+    <COUNTRY>EU</COUNTRY>
+    <COMPANY>Elektra</COMPANY>
+    <PRICE>7.20</PRICE>
+    <YEAR>1985</YEAR>
+  </ESSAY>
+  <ESSAY>
+    <TITLE>Red</TITLE>
+    <ARTIST>The Communards</ARTIST>
+    <COUNTRY>UK</COUNTRY>
+    <COMPANY>London</COMPANY>
+    <PRICE>7.80</PRICE>
+    <YEAR>1987</YEAR>
+  </ESSAY>
+  <ESSAY>
+    <TITLE>Unchain my heart</TITLE>
+    <ARTIST>Joe Cocker</ARTIST>
+    <COUNTRY>USA</COUNTRY>
+    <COMPANY>EMI</COMPANY>
+    <PRICE>8.20</PRICE>
+    <YEAR>1987</YEAR>
+  </ESSAY>
+</CATALOG>
