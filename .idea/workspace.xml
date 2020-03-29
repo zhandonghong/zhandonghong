@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54fd8812-2153-412b-b25f-28c8355890c6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/images/img_flowers.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/img_smallflower.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/ceshi.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/ceshi.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -17,15 +21,16 @@
     <session id="2039956971">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
+          <entry key="project.closed" value="10" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="5" />
+          <entry key="project.open.time.1" value="6" />
+          <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="11" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -48,14 +53,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="8524" />
+          <entry key="html" value="8884" />
           <entry key="js" value="2499" />
           <entry key="xml" value="83" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="8524" />
+          <entry key="HTML" value="8884" />
           <entry key="JavaScript" value="2499" />
           <entry key="XML" value="83" />
         </counts>
@@ -67,11 +72,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="100" column="18" selection-start-line="100" selection-start-column="18" selection-end-line="100" selection-end-column="18" />
+            <state relative-caret-position="265">
+              <caret line="47" column="11" lean-forward="true" selection-start-line="47" selection-start-column="11" selection-end-line="47" selection-end-column="11" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
               </folding>
             </state>
@@ -81,8 +85,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/my_jquery_functions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="11" column="33" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="33" />
+            <state relative-caret-position="81">
+              <caret line="3" column="44" lean-forward="true" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -90,8 +94,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/denglu.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="50" column="30" lean-forward="true" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="30" />
+            <state relative-caret-position="1350">
+              <caret line="50" column="30" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -99,8 +103,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/ceshi.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="27" column="3" lean-forward="true" selection-start-line="27" selection-start-column="3" selection-end-line="36" selection-end-column="9" />
+            <state relative-caret-position="243">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+              <folding>
+                <element signature="n#style#0;n#p#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -164,9 +171,9 @@
         <option value="$PROJECT_DIR$/html/jquery.html" />
         <option value="$PROJECT_DIR$/html/javaSE.html" />
         <option value="$PROJECT_DIR$/html/javaDetail.html" />
-        <option value="$PROJECT_DIR$/html/ceshi.html" />
         <option value="$PROJECT_DIR$/js/my_jquery_functions.js" />
         <option value="$PROJECT_DIR$/html/denglu.html" />
+        <option value="$PROJECT_DIR$/html/ceshi.html" />
         <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
@@ -177,8 +184,8 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="67" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="66" />
     <option name="y" value="-24" />
     <option name="width" value="1944" />
     <option name="height" value="951" />
@@ -207,16 +214,6 @@
               <item name="zhandonghong.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="zhandonghong.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zhandonghong.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zhandonghong.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zhandonghong.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="xml" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -226,23 +223,23 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Ajaxtest" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\zhand\Desktop\zhandonghong.github.io\images" />
+      <recent name="C:\Users\zhand\Desktop\zhandonghong.github.io\js" />
+      <recent name="C:\Users\zhand\Desktop\zhandonghong.github.io" />
+      <recent name="C:\Users\zhand\Desktop\zhandonghong.github.io\js\vendor" />
+      <recent name="C:\Users\zhand\Desktop\zhandonghong.github.io\img" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\zhand\Desktop\zhandonghong.github.io\xml" />
       <recent name="C:\Users\zhand\Desktop\zhandonghong.github.io" />
       <recent name="C:\Users\zhand\Desktop\zhandonghong.github.io\js" />
       <recent name="C:\Users\zhand\Desktop\zhandonghong.github.io\html" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\zhand\Desktop\zhandonghong.github.io\js" />
-      <recent name="C:\Users\zhand\Desktop\zhandonghong.github.io\images" />
-      <recent name="C:\Users\zhand\Desktop\zhandonghong.github.io" />
-      <recent name="C:\Users\zhand\Desktop\zhandonghong.github.io\js\vendor" />
-      <recent name="C:\Users\zhand\Desktop\zhandonghong.github.io\img" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -277,12 +274,14 @@
       <workItem from="1585285629017" duration="22765000" />
       <workItem from="1585314268815" duration="31000" />
       <workItem from="1585319453675" duration="2230000" />
-      <workItem from="1585322827421" duration="15491000" />
+      <workItem from="1585322827421" duration="15616000" />
+      <workItem from="1585370591797" duration="3124000" />
+      <workItem from="1585483627807" duration="140000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80891000" />
+    <option name="totallyTimeSpent" value="84280000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -409,6 +408,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/javaOOP.html" />
+    <entry file="file://$PROJECT_DIR$/html/denglu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1350">
+          <caret line="50" column="30" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/html/javaDetail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1269">
@@ -425,32 +431,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/html/ceshi.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="27" column="3" lean-forward="true" selection-start-line="27" selection-start-column="3" selection-end-line="36" selection-end-column="9" />
+        <state relative-caret-position="243">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/my_jquery_functions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="33" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/denglu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="50" column="30" lean-forward="true" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="30" />
+        <state relative-caret-position="81">
+          <caret line="3" column="44" lean-forward="true" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="100" column="18" selection-start-line="100" selection-start-column="18" selection-end-line="100" selection-end-column="18" />
+        <state relative-caret-position="265">
+          <caret line="47" column="11" lean-forward="true" selection-start-line="47" selection-start-column="11" selection-end-line="47" selection-end-column="11" />
           <folding>
             <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
